@@ -1,0 +1,43 @@
+<h1>Register</h1>
+<div class='row'>
+
+  <form class='col s12' action='/user/register' method='POST'>
+    <div class='row'>
+      <div class='input-field col s12'>
+        <input
+          id='username'
+          name='username'
+          type='text'
+          class='validate'
+          autocomplete='off'
+        />
+        <label for='username'>Username</label>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='input-field col s12'>
+        <input id='password' name='password' type='password' class='validate' />
+        <label for='password'>Password</label>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='input-field col s12'>
+        <input
+          id='password2'
+          name='password2'
+          type='password'
+          class='validate'
+        />
+        <label for='password2'>Confirm Password</label>
+      </div>
+    </div>
+
+    <button
+      class='btn waves-effect waves-light'
+      type='submit'
+      name='action'
+    >Register
+      <i class='material-icons right'>send</i>
+    </button>
+  </form>
+</div>

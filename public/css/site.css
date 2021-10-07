@@ -1,0 +1,17 @@
+.site-wrapper {
+  width: 1200px;
+  margin: auto;
+}
+.logo {
+  margin-left: 20px;
+}
+
+h1,
+.slick {
+  text-align: center;
+  color: rgb(100, 100, 100);
+}
+span.badge {
+  color: white;
+  text-decoration: underline;
+}
