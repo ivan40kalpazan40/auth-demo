@@ -22,13 +22,14 @@
         <a href='/' class='logo brand-logo'>vijt</a>
         <ul id='nav-mobile' class='right hide-on-med-and-down'>
           <li><a href='/'>Home</a></li>
-          <li><a href='/user/login'>Login</a></li>
-          <li><a href='/user/register'>Register</a></li>
           {{#if token}}
+            <li><a href='/user/logout'>Logout</a></li>
             <li><a href='/user'>User<span
                   class='coral badge'
                 >{{token.username}}</span></a></li>
           {{else}}
+            <li><a href='/user/login'>Login</a></li>
+            <li><a href='/user/register'>Register</a></li>
             <li><a href='/user'>User<span
                   class='coral badge'
                 >Guest</span></a></li>
