@@ -95,11 +95,17 @@ app.post('/user/login', async (req, res) => {
   }
 });
 
+// LOGOUT
+app.get('/user/logout', (req, res) => {
+  res.clearCookie('user');
+  res.redirect('/');
+});
+
 // PROFILE
 app.get('/user', auth, (req, res) => {
   if (!req.user) {
     return res.status(401).send('You are not authorized to see this page!');
   }
-  res.render('user/profile', req.user);
+  res.render('user/profile', { token: req.user });
 });
 app.listen(4000, console.log.bind(console, 'Server running on port 4000....'));
